@@ -17,7 +17,7 @@ nameSearch = input("Input Congress Member first and last name: ")
 
 
 #create a list of all the congressional sessions
-#right now only looking at 115(yr. 2017) and 116(yr. 2019)
+#right now only looking at session 116 (yr. 2019)
 session = [116]
 
 #create a list of the chambers
@@ -42,8 +42,3 @@ for s in session:
                     print('Url: ' + str(m['url']))
                     print('State: '+ str(m['state']))
                     print("In Office: "+ str(m['in_office']))
-
-
-
-
-        
