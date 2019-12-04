@@ -4,6 +4,7 @@
 
 import requests
 import json
+import string
 
 # This is the get function he set up in class
 def get(url):
@@ -12,9 +13,36 @@ def get(url):
     data = requests.get(url, headers=headers).json()
     return data['results']
 
+def cleanMe(dirtyWord):
+    for char in dirtyWord:
+        if char in string.punctuation:
+            return dirtyWord.replace(char,'')
+        else:
+            return dirtyWord
+
+def get_input():
+    control = True
+    while control:
+        try:
+            nameSearch = input("Input Congress Member first and last name: ")
+            #check if empty, check if None
+            if nameSearch == '' or nameSearch == None or nameSearch.isdigit() == True:
+                nameSearch = input("Input Congress Member first and last name: ")
+            #check if it has a number
+            elif nameSearch.isalpha() == True:
+                new_name = cleanMe(nameSearch)
+                control=False
+            else:
+                new_name = nameSearch
+                control = False;
+        except:
+            print("error")
+    return new_name.capitalize()
+    
+
 def main():
     #get the user input of the congress member they want to search
-    nameSearch = input("Input Congress Member first and last name: ")
+    name = get_input()
 
 
     #create a list of all the congressional sessions
@@ -36,7 +64,7 @@ def main():
 
                 for m in member['members']:
 
-                    if (m['first_name'] +" "+ m['last_name']) == nameSearch:
+                    if (m['first_name'] +" "+ m['last_name']) == name:
 
                         #just for testing
                         print('Facebook Account: '+ str(m['facebook_account']))
