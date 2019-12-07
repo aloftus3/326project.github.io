@@ -8,25 +8,34 @@ import search3
 from search_modules import*
 
 def main():
-    window = Tk()
-
+    '''This is the main driver to start the whole program of Propublica Sample Searches'''
+    
+    window = Tk()   # this is the container for GUI 
+    
+    # customizing the window container
     window.title('   Welcome to ProPublica Sample Searches')
     window.iconbitmap('small_Logo.ico')
     window.geometry('672x580')
+    
+    # getting the image to be inserted into GUI 
     my_img = ImageTk.PhotoImage(Image.open('GUI_image_.png'))
+    
+    # creating the instance of the GUI withing the window container
     gui_app = GuiApp(window, my_img)
+    
+    # activating the GUI window
     window.mainloop()
 
 class GuiApp():
+    '''This class is a blueprint for the GUI window'''
+    
     def __init__(self, parentWindow, topFramePic):
-
         self.window = parentWindow
         self.topPicture = topFramePic
         self.choice_var = IntVar()
         self.last_name = StringVar()
         self.first_name = StringVar()
         self.state_code = StringVar()
-
 
         picture = Label(self.window, image=self.topPicture)
         picture.grid(row=0, columnspan=3, sticky=N)
@@ -68,10 +77,14 @@ class GuiApp():
         btn_quit.grid(row=9, columnspan=3, pady=15)
 
     def show_data(self):
-        search_num = self.choice_var.get()
+       '''This method generates the results of the search requested by the user'''
+        
+        search_num = self.choice_var.get()   #variable to hold the number of the user-chosen search
+        
         if search_num == 3:
-            search3.run_search3()
-        else:
+            search3.run_search3()   
+            
+        elif search_num == 1 or search_num == 2:
             results = Tk()
             results.title('  Search Results ')
             results.iconbitmap('small_Logo.ico')
@@ -85,13 +98,13 @@ class GuiApp():
                 last_name = str(self.last_name.get())
                 # !!! result = search1.SomeMethod(first_name, last_name)
                 # !!! txt_box.insert(END, result)
-            elif search_num == 2:
+            else:
                 state_code = str(self.state_code.get())
-                txt_box.insert(END, state_code)
                 # !!! result = search2.SomeMethod(state_code)
                 # !!! txt_box.insert(END, result)
-            else:
-                pass
+        else:
+            message = "No input data. Try again."
+            msg.showinfo("  Alert!", message)
 
 
 if __name__ == '__main__':
