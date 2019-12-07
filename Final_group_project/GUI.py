@@ -17,10 +17,11 @@ def show_data():
         txt_box = Text(results, width=500, height=350, wrap=WORD).grid(row=1)
 
         if search_num == 2:
-            pass
+            first = str(first_name.get())
+            last = str(last_name.get())
 
         elif search_num == 1:
-            pass
+            state = str(state_code.get())
 
         else:
             pass
@@ -52,7 +53,7 @@ entry_first_name = Entry(root, bg="light grey").grid(row=3, column=2, sticky=W)
 rd2 = Radiobutton(root,text='2: Get list of Congressional representatives for a state', variable=choice_var, value=2)
 rd2.grid(row=5, column=0, padx=12, sticky=W)
 label1_search2 = Label(root, text="Enter two-letter code for state: ").grid(row=5, column=1, pady=15, sticky=W)
-state = StringVar()
+state_code = StringVar()
 entry_state = Entry(root, justify=LEFT, bg="light grey").grid(row=5, column=2, pady=15, sticky=W)
 
 rd3 = Radiobutton(root, text='3: Get historical data on average age in Congress', variable=choice_var, value=3)
