@@ -77,7 +77,7 @@ class GuiApp():
         btn_quit.grid(row=9, columnspan=3, pady=15)
 
     def show_data(self):
-       '''This method generates the results of the search requested by the user'''
+        '''This method generates the results of the search requested by the user'''
         
         search_num = self.choice_var.get()   #variable to hold the number of the user-chosen search
         
