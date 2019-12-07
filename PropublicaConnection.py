@@ -11,7 +11,7 @@ def get(url):
     #call the API key from the config.txt file
     with open('config.txt') as handle:
         API_KEY = handle.read().strip()
-    headers = {"X-API-KEY": "WWSGHLJjWxC2m9tznYILCKy1xtmkvnxxdo8nEBt8"}
+    headers = {"X-API-KEY": API_KEY}
     url = "https://api.propublica.org/congress/v1" + url
     data = requests.get(url, headers=headers).json()
     return data['results']
