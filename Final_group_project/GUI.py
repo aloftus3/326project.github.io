@@ -45,7 +45,7 @@ rd1.grid(row=2, column=0, padx=12, sticky=W)
 label1_search1 = Label(root, text="Enter last name: ").grid(row=2, column=1, sticky=W)
 entry_last_name = Entry(root, bg="light grey").grid(row=2, column=2, sticky=W)
 label2_search1 = Label(root, text="Enter first name: ").grid(row=3, column=1, sticky=W)
-entry_state = Entry(root, bg="light grey").grid(row=3, column=2, sticky=W)
+entry_first_name = Entry(root, bg="light grey").grid(row=3, column=2, sticky=W)
 
 rd2 = Radiobutton(root,text='2: Get list of Congressional representatives for a state', variable=choice_var, value=2)
 rd2.grid(row=5, column=0, padx=12, sticky=W)
