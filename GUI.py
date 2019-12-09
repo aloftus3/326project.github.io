@@ -89,7 +89,7 @@ class GuiApp():
             name = str(self.name.get())
             result = search1.runSearch1(name)
             if result == None:
-                messagebox.showerror("Error","Name Error. Try again.")
+                msg.showerror("Error","Name Error. Try again.")
                 return            
             results = Tk()
             results.title('  Search Results ')
