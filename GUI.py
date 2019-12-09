@@ -88,7 +88,7 @@ class GuiApp():
         elif search_num == 1:
             name = str(self.name.get())
             result = search1.runSearch1(name)
-            if result == None:
+            if result == '':
                 msg.showerror("Error","Name Error. Try again.")
                 return            
             results = Tk()
