@@ -33,7 +33,7 @@ def runSearch2(state):
     data = []
     state = cleanMe(state).upper()
     if state not in states:
-        messagebox.showerror("Error","Name Error. Try again.")
+        msg.showerror("Error","Name Error. Try again.")
         return pd.DataFrame()
     chambers = ['house', 'senate']
     
