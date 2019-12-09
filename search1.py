@@ -49,7 +49,7 @@ def runSearch1(name):
 
     #create a list of the chambers
     chambers = ['house','senate']
-    result = None
+    result = ''
     #set testId to None
     ## Many congress members are in many sessions so I did reversed order of 
     ## sessions to only get the latest term
