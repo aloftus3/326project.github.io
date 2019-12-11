@@ -24,7 +24,7 @@ This section provides information on how to use our application as well as depen
     iii. See a plot of the average ages over time (1993 - 2019)
           a. Select the third button
           b. Select 'search' at the bottom of the GUI and wait
-          c. A plot will appear in the output window of your IDE
+          c. A plot will appear in the output window of your IDE        
 6. To exit, click the X at the top right of any window or select 'Exit Program' at the bottom of the GUI
 
 ### Requirements:
