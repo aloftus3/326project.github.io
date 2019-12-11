@@ -12,21 +12,21 @@ This section provides information on how to use our application as well as depen
 4. The user interface will now appear in a separate window
 5. Now, there are 3 options presented
 
-    i. Search any congress member from sessions 102 - 116
+      i. Search any congress member from sessions 102 - 116
     
           a. Select the first button
           b. Enter the congress member first and last name in the corresponding textbox
           c. Select 'search' at the bottom and wait
           d. A new window will present the entered congress member information for each session he/she was in
           
-    ii. Search any U.S. state to find it's current representatives
+      ii. Search any U.S. state to find it's current representatives
     
           a. Select the second button
           b. Enter the 2 letter state code in the corresponding textbox (second one down)
           c. Select 'search' at the bottom of the GUI and wait
           d. A new window will present all the current represenatives for the entered state code
           
-    iii. See a plot of the average ages over time (1993 - 2019)
+      iii. See a plot of the average ages over time (1993 - 2019)
     
           a. Select the third button
           b. Select 'search' at the bottom of the GUI and wait
