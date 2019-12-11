@@ -12,25 +12,25 @@ This section provides information on how to use our application as well as depen
 4. The user interface will now appear in a separate window
 5. Now, there are 3 options presented
 
-      ##### 1. Search any congress member from sessions 102 - 116
+      ##### I. Search any congress member from sessions 102 - 116
     
-          a. Select the first button
-          b. Enter the congress member first and last name in the corresponding textbox
-          c. Select 'search' at the bottom and wait
-          d. A new window will present the entered congress member information for each session he/she was in
+          i. Select the first button
+          ii. Enter the congress member first and last name in the corresponding textbox
+          iii. Select 'search' at the bottom and wait
+          iv. A new window will present the entered congress member information for each session he/she was in
           
-      ##### 2. Search any U.S. state to find it's current representatives
+      ##### II. Search any U.S. state to find it's current representatives
     
-          a. Select the second button
-          b. Enter the 2 letter state code in the corresponding textbox (second one down)
-          c. Select 'search' at the bottom of the GUI and wait
-          d. A new window will present all the current represenatives for the entered state code
+          i. Select the second button
+          ii. Enter the 2 letter state code in the corresponding textbox (second one down)
+          iii. Select 'search' at the bottom of the GUI and wait
+          iv. A new window will present all the current represenatives for the entered state code
           
-      ##### 3. See a plot of the average ages over time (1993 - 2019)
+      ##### III. See a plot of the average ages over time (1993 - 2019)
     
-          a. Select the third button
-          b. Select 'search' at the bottom of the GUI and wait
-          c. A plot will appear in the output window of your IDE
+          i. Select the third button
+          ii. Select 'search' at the bottom of the GUI and wait
+          iii. A plot will appear in the output window of your IDE
           
 6. To exit, click the X at the top right of any window or select 'Exit Program' at the bottom of the GUI
 
