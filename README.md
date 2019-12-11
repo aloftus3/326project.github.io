@@ -17,7 +17,7 @@ This program is initiated by running the GUI.py file:
 
 `python GUI.py`
 
-## Test##
+## Test ##
 Included are unit tests that you can run from test.py file:
 
 `pytest test.py`
